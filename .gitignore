@@ -1,5 +1,4 @@
 dist
-cabal-dev
 *.o
 *.hi
 *.chi
@@ -9,3 +8,5 @@ _cache
 _site
 cabal.sandbox.config
 .cabal-sandbox/
+Main
+nixpkgs
