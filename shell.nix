@@ -1,14 +1,18 @@
-{}:
-with import <nixpkgs> {};
-
-let 
-    haskellPackages = pkgs.haskellPackages.override {
-      extension = self: super: {
-        perurbis = self.callPackage ./. {};        
-      };
-    };
-in lib.overrideDerivation haskellPackages.perurbis (attrs: {
-     buildInputs = [ haskellPackages.cabalInstall_1_20_0_3
-                     pkgs.texLiveFull ] ++ attrs.buildInputs;
-     # buildInputs = [ haskellPackages.cabalInstall_1_20_0_3 ] ++ attrs.buildInputs;
-   })
+with (import <nixpkgs> {}).pkgs;
+let pkg = haskellngPackages.callPackage
+            ({ mkDerivation, base, containers, hakyll, pandoc, pandoc-types
+             , stdenv, transformers
+             }:
+             mkDerivation {
+               pname = "hakyll-bootstrap";
+               version = "0.1.0.0";
+               src = ./.;
+               isLibrary = false;
+               isExecutable = true;
+               buildDepends = [
+                 base containers hakyll pandoc pandoc-types transformers
+               ];
+               license = stdenv.lib.licenses.mit;
+             }) {};
+in
+  pkg.env
