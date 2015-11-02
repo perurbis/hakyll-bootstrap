@@ -1,0 +1,470 @@
+
+/***************************************************************************************
+
+ASSAN SHOP CSS STARTS FROM BELOW
+
+****************************************************************************************/
+
+/***shop footer****/
+.footer-shop{
+    background-color: #f5f5f5;
+    padding-top: 60px;
+}
+.footer-top{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+.footer-top .top-social li i{
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    @include box-shadow (0px 0px 2px rgba(0,0,0,0.2));
+}
+.footer-shop h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.shop-footer-main{
+    padding-top: 30px;
+}
+.shop-footer-main ul li{
+    line-height: 28px;
+}
+.shop-footer-main ul li a{
+    color:#777;
+    font-weight:400;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.shop-footer-main ul li a:hover{
+    text-decoration: underline;
+}
+.footer-shop .footer-btm{
+    background-color: #ccc;
+}
+.footer-shop .footer-btm p{
+    margin-bottom: 0px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+/**shop services***/
+.shop-services{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #333;
+    @include box-shadow (0px 1px 4px rgba(0,0,0,0.4));
+}
+.shop-services i{
+    color:$skincolor;
+    margin-right: 15px;
+}
+.shop-service-box {
+    h4{
+    color:#fff;
+}
+p{
+    color:#aeaeae;
+}
+}
+/****shop breadcrumb****/
+.breadcrumb-light{
+    background:url(../img/showcase-1.jpg) repeat fixed !important;
+    background-size: cover;
+    padding: 70px 0 !important;
+    border-bottom: 0px;
+     h4{
+    color:#fff !important;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+     ol.breadcrumb li a {
+    color: #fff;
+}
+ ol.breadcrumb {
+    color: #fff;
+    font-weight: 400;
+}
+ p{
+    color:#fff;
+    font-weight: 600;
+    margin: 0;
+}
+}
+
+/***product***/
+.product-col{
+    text-align: center;
+    @include transition (all 0.3s);
+    position: relative;
+}
+span.sale-label{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 16px;
+    background-color: #C63D2D;
+    color:#fff;
+    @include border-radius (3px);
+}
+.product-desc-sh h4{
+    text-transform: capitalize;     
+}
+.product-col img{
+    width:100%;
+}
+.product-desc-sh h4 a{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.product-desc-sh span{
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color:red;
+}
+.product-desc-sh del{
+    margin-right: 10px;
+    color:#777;
+}
+.product-desc-sh{
+    padding: 20px;
+}
+@media(min-width:992px){
+    .product-desc-sh{
+        background-color: #f8f8f8;
+    }  
+}
+.product-col img{
+    display: block;
+    margin: 0 auto;
+}
+
+.shop-sidebar .popular-desc h5{
+    font-weight: 400;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+.shop-footer-list-menu li a{
+    color:#777;
+}
+.shop-footer-list-menu li a:hover{
+    color:#fff;
+}
+/************cart***************/
+.shop-cart ol{
+    padding: 0px;
+}
+.shop-cart ol li{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.shop-cart ol li:last-child{
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+.shop-cart ol a{
+    margin-top: 0px !important;
+}
+.shop-cart ol li img{
+    width:70px;
+    height: auto;
+    float: left;
+}
+.cart-desc{
+    overflow: hidden;
+    padding-left: 20px;
+}
+.cart-desc h5{
+    margin: 0px;
+    font-weight: 400;
+}
+.cart-item-price{
+    display: block;
+    color:#777;
+}
+.cart-total{
+    font-size: 20px;
+    line-height: 34px;
+}
+.sponsors-icons li i{
+    font-size: 40px;
+    color: #999;
+}
+.detail-img-col{
+    text-align: center;
+}
+.detail-img-col img{
+    display: block;
+    margin: auto;
+}
+.detail-img-sm img{
+    width:70px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+
+.detail-content-right h3{
+    margin-bottom: 15px;
+}
+.rating-list li{
+    padding: 0px;
+}
+.rating-list li i.yellow{
+    color:#FFD700;
+}
+.rating-list li i.gray{
+    color:#bbb;
+}
+.rating-list li.detail-price{
+    padding-right: 10px;
+    color:$skincolor;
+    font-weight: 400;
+    font-size: 20px;
+}
+.rating-list li.review a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color:$skincolor;
+    font-weight: 400;
+    font-size: 14px;
+}
+.rating-list li.admin-detail{
+    padding-right: 20px;
+}
+.bootstrap-touchspin{
+    float: left;
+    margin-right: 5px;
+    width: 130px;
+}
+.bootstrap-touchspin .form-control{
+    height: 31px;
+    margin-top: 5px;
+}
+.product-feautres-list li{
+    font-weight: 400;
+    font-size: 13px;
+    color:#777;
+}
+.product-feautres-list li{
+    line-height: 30px;
+}
+.product-feautres-list li i{
+    margin-right: 10px;
+}
+.add-cart button{
+    margin: 5px;
+}
+.product-cat-text p{
+    margin: 0px;
+}
+.review-box{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+.review-box img{
+    float:left;
+    width:60px;
+    height: auto;
+}
+.review-content {
+    overflow: hidden;
+    padding-left: 20px;
+}
+.review-content p{
+    font-size: 13px;
+    color:#888;
+    margin: 0px;
+}
+.review-content .rating-list{
+    margin: 0px;
+}
+.sidebar-info-box .services-box-icon i{
+    color:#fff;
+}
+
+.sidebar-info-box .services-box-info h4{
+    margin-bottom: 5px;
+}
+table.shopping-cart-table tr th, table.shopping-cart-table tr td {
+    vertical-align: middle;
+}
+
+.shopping-cart-container h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#777;
+}
+.colored-box{
+    padding: 15px;
+    background-color: $skincolor;
+    @include box-shadow (2px 2px 7px rgba(0,0,0,0.2));
+}
+.colored-box i{
+    font-size: 30px;
+    width:70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    @include border-radius (50%);
+    background-color: #fff;
+    color:$skincolor;
+    margin-bottom: 15px;
+}
+.colored-box h4{
+    color:#fff;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.colored-box p{
+    color:#fff;
+}
+
+.login-link {
+    margin-bottom: 50px;
+}
+.login-link a{
+    color:$skincolor;
+}
+
+
+/*****sky login register form****/
+.sky-form-login-register .btn{
+    padding: 8px 12px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    @include box-shadow (0px 2px 1px rgba(0,0,0,0.2));
+    @include transition (all 0.3s);
+}
+.sky-form-login-register .btn:hover{
+    @include box-shadow (none);
+}
+
+.sky-form-login-register .sky-form {
+    margin: 0;
+    outline: none;
+    border: 1px solid #eee;
+    @include box-shadow (none);
+    font: 13px/1.55  $primary-font;
+    color: #666;
+}
+.sky-form-login-register .sky-form.v2{
+    font: 13px/1.55  $primary-font; 
+}
+.sky-form-login-register .sky-form footer{
+    background-color: #fff;
+}
+.sky-form-login-register .sky-form .btn-link{
+    color:#777;
+}
+.sky-form-login-register h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    color: #777;
+}
+.border-rits{
+    text-align: center;
+}
+.border-rits span{
+    color: #687074;
+    font-size: 14px;
+    padding: 0 10px;
+    position: relative;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.border-rits span:before{
+    top: 10px;
+    height: 1px;
+    width: 100%;
+    content: " ";
+    background: #ccc;
+    position: absolute;
+    left: 100%;
+}
+.social-login-wrapper{
+    padding: 50px 0;
+    background-color: #222;
+}
+.border-rits span:after{
+    top: 10px;
+    height: 1px;
+    width: 100%;
+    content: " ";
+    background: #ccc;
+    position: absolute;
+    right: 100%;
+}
+.social-login button{
+    display: block;
+    width:100%;
+    margin-bottom: 10px;
+    margin-left: 0px !important;
+}
+.social-login .btn-facebook{
+    background-color: #3b5998;
+    color:#fff;
+}
+.social-login .btn-twitter{
+    background-color: #0084b4;
+    color:#fff;
+}
+.sky-form-login-register .sky-form .btn-block{
+    margin: 0px !important;
+}
+
+.sky-form-login-register.v2 .sky-form footer {
+    border-top: 0px;
+
+}
+.sky-form-login-register .sky-form .button{
+    font: 400 15px/39px  $primary-font;
+    background-color: $skincolor;
+}
+
+.social-1.reg-social li a i{
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.items-list{
+    margin-bottom: 40px;
+}
+.items-list h3{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.items-list img{
+    width:100%;
+    margin-bottom: 20px;
+}
+.items-list p{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.items-list .rate{
+    color:$skincolor;
+    font-size: 18px;
+}
+.shop-cart .btn-theme-bg{
+    color:#fff !important;
+}
+.shop-cart .btn-theme-bg:hover{
+    background-color: #333 !important;
+}
