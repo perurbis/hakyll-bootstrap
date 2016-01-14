@@ -516,7 +516,9 @@ p.lead {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-
+.navbar-nav {
+    padding-top: 15px;
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #32c5d2;
   background-color: transparent;
@@ -534,6 +536,10 @@ p.lead {
   line-height: 20px;
   font-style: normal;
   text-transform: uppercase;
+  height: 80px;
+  padding: 0px 15px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -549,8 +555,8 @@ p.lead {
 }
 
 .navbar-brand img {
-  width: 80px;
-  height: auto;
+  width: auto;
+  height: 80px;
 }
 
 /*============================*/

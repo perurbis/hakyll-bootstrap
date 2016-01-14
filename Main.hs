@@ -93,7 +93,7 @@ directory act f = act $ fromGlob $ f ++ "/**"
 assets :: Rules ()
 assets = do
   mapM_ (static stripAssets) [ "assets/*", "assets/fonts/*", "assets/css/*", "assets/js/*"
-                             , "assets/pe-icons/*"
+                             , "assets/img/*", "assets/pe-icons/*"
                              ]
   mapM_ (directory (static stripAssets)) [ "assets/rs-plugin/*", "assets/bootstrap/*"
                                          , "assets/cubeportfolio/*", "assets/pe-icons/*"

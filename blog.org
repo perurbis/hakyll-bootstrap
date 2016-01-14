@@ -1,0 +1,29 @@
+* The blog
+#+NAME: post-2
+** Post 1                                                         :post:test:
+And another
+
+
+#+BEGIN_SRC haskell
+  
+  main :: IO ()
+  main = print "Hi"
+  
+#+END_SRC
+
+#+NAME: post-1
+** Post 2                                                              :test:
+Blah blah
+
+[[post-1][Post 1]]
+
+#+NAME: a-longer-post
+** A longer post
+Client disconnect from subscription channel UserHistoryChannel
+{"metronome_subscription_channel":"UserHistoryChannel","message":"Client disconnect from subscription channel UserHistoryChannel"}
+--------------------------------------------------------------------------------
+Client disconnect from subscription channel UserProfileChannel
+{"metronome_subscription_channel":"UserProfileChannel","message":"Client disconnect from subscription channel UserProfileChannel"}
+--------------------------------------------------------------------------------
+metronome-server: Parse exception: not enough input
+
