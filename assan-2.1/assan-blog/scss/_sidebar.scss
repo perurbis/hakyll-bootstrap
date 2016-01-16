@@ -1,0 +1,83 @@
+/*****************
+Sidebar style
+****************/
+
+.widget{
+    margin-bottom: 30px;
+    .widget-title{
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #f5f5f5;
+        padding: 10px;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    .media-heading{
+       font-weight: 500;
+            font-size: 13px;
+            line-height:15px;
+        a{
+         color:#999;
+         &:hover{
+             color:$skincolor;
+         }
+        }
+    }
+    .category-list{
+        li{
+            &:last-child a{
+                border-bottom: 0px;
+            }
+            a{
+                color:#999;
+                display: block;
+                padding: 5px 0;
+                border-bottom: 1px dotted #eee;
+                &:hover{
+                    color:$skincolor;
+                }
+            }
+        }
+    }
+    .instagram-list{
+        a{
+            width: 125px;
+            float: left;
+            display: block;
+            margin: 2px;
+        }
+    }
+    .tag-list{
+        li{
+            padding: 0px;
+            margin-bottom: 3px;
+        }
+        a{
+            display: block;
+            padding: 3px 6px;
+            background-color: #eee;
+        }
+    }
+}
+.search-widget{
+    position: relative;
+    margin-top:10px;
+    button{
+        position: absolute;
+        right: 10px;
+        top: 5px;  
+        border: 0px;
+        background-color: transparent;
+    }
+    .form-control{
+        border: 0px;
+        border-bottom: 2px solid #eee;
+        @include border-radius(0px);
+        @include box-shadow (none);
+        &:focus{
+            border-bottom-color: $skincolor;
+        }
+    }
+}

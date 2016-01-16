@@ -1,0 +1,42 @@
+/**tabs**/
+.tabs-navigation{
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    @media(min-width:768px){
+        li+li{
+            margin-left: 40px;
+        }
+    } 
+    li{
+        margin-bottom:30px;
+        a{
+            display: block;
+            color:#777;
+             span{
+            display: block;
+            width:90px;
+            height:40px;
+          
+            text-align: center;
+            background-color:  transparent;
+            @include border-radius(50%);
+            font-size:30px;
+            margin:10px auto;
+        }
+        }
+        &.active a{
+                color:$skincolor;
+                span{
+                    color:$skincolor;
+                    background-color: transparent;
+                }
+            }
+    }
+}
+.service-tab-content{
+    h1{
+        text-transform: uppercase;
+        color:#333;
+        
+    }
+}

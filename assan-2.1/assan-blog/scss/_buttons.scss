@@ -1,0 +1,56 @@
+.btn{
+    text-transform: uppercase;
+    border: 0px;
+    @include border-radius (0px);
+    @include transition (all 0.3s);
+    font-weight: 600;
+    font-family: $title-font;
+    font-size: 13px;
+}
+.btn-lg{
+    padding: 10px 30px;
+}
+.btn-skin{
+    position: relative;
+    border: 1px solid $skincolor;
+    z-index:2;
+    &:after{
+        content:"";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        @include transition (width 0.4s);
+        background-color: $skincolor;
+        z-index: -1;
+    }
+    &:hover:after{
+        width: 100%;
+    }
+    &:hover{
+        color:#fff;
+    }
+}
+.btn-dark{
+    position: relative;
+    border: 1px solid #333;
+    z-index:2;
+    &:after{
+        content:"";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        @include transition (width 0.4s);
+        background-color: #333;
+        z-index: -1;
+    }
+    &:hover:after{
+        width: 100%;
+    }
+    &:hover{
+        color:#fff;
+    }
+}

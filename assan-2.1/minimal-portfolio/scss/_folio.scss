@@ -1,0 +1,80 @@
+/*portfolio
+*/
+.box-img  .inner{
+	display: block;
+	position: relative;
+        margin-bottom: 30px;
+}
+.box-img .inner {
+	overflow: hidden;
+}
+.item-desc{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    display: none;
+    height: 100%;
+background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,0.75)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(45deg,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.item-desc span{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:#fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    a{
+        display: block;
+        margin-right: 20px;
+        width: 40px;
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+        color:#fff;
+        background:$skincolor;
+        text-align: center;
+        margin-bottom: 1px;
+    }
+}
+.item-desc p{
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: $p-font;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: -20px;
+    font-weight: 700;
+    em{
+        display: block;
+        font-size: 14px;
+        font-style: normal;
+        text-transform: capitalize;
+        font-family: $p-font;
+        font-weight: 400;
+    }
+}
+
+.cbp-l-filters-dropdownWrap{
+    background:$skincolor;
+}
+.cbp-l-filters-dropdownList .cbp-filter-item{
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color:#eee;
+}

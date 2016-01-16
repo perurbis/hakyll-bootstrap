@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Assan E-commerce</title>
+
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!--plugins-->
+        <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="bower_components/flexslider/flexslider.css" rel="stylesheet">
+        <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+        <link href="owl-carousel/owl.transitions.css" rel="stylesheet">
+        <link href="pe-icons/Pe-icon-7-stroke.css" rel="stylesheet">
+        <link href="custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
+        <link href="css/yamm.css" rel="stylesheet">
+        <!--custom css file-->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--search toggle form-->
+        <div class="search-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <form>
+                            <input type="text" class="form-control" placeholder="E.g. Blue T-shirt...">
+                            <span class="search-close"><i class="fa fa-times"></i></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--search toggle form end-->
+        <!--header start-->
+        <header class="header">
+            <!--top bar-->
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 hidden-xs">
+                            <span>Welcome message goes here...</span>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <ul class="list-inline">
+                                <li class="hidden-xs"><a href="#" class="offers">offers</a></li>                              
+                                <li class="hidden-xs"><a href="#"><i class="pe-7s-user"></i> Register</a></li>
+                                <li><a href="#"><i class="pe-7s-lock"></i> Login</a></li>
+                                <li class="lang-dropdown">
+                                    <a href="#"><img src="images/flag1.png" alt=""> English <i class="fa fa-angle-down"></i></a>
+                                    <div class="lang-drop-menu">
+                                        <a href="#"><img src="images/flag1.png" alt=""> English</a>
+                                        <a href="#"><img src="images/flag2.png" alt=""> French</a>
+                                        <a href="#"><img src="images/flag3.png" alt=""> German</a>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)" class="search-toggle"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--top bar end-->
+
+
+            <!--main navigation start-->
+            <!-- Static navbar -->
+            <nav class="navbar navbar-default navbar-static-top yamm sticky">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="images/logo-dark.png" alt="logo"></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <!--mega menu-->
+                            <li class="dropdown active yamm-fw">
+                                <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Pages  <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="yamm-content">
+                                            <div class="row">
+
+                                                <div class="col-sm-3">
+                                                    <h3 class="heading">Base pages</h3>
+                                                    <ul class="nav mega-vertical-nav">        
+                                                        
+                                                        
+                                                        <li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+                                                        <li><a href="register.html"><i class="fa fa-user"></i> Register</a></li>
+                                                        <li><a href="contact.html"><i class="fa fa-map-marker"></i> Contact </a></li>
+                                                        <li><a href="404.html"><i class="fa fa-trash-o"></i> 404 </a></li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <h3 class="heading">Product Pages </h3>
+                                                    <ul class="nav mega-vertical-nav">
+                                                        <li><a href="product-list.html"><i class="fa fa-list"></i> Product list</a></li>
+                                                        <li><a href="product-grid.html"><i class="fa fa-bars"></i> Product grid</a></li>
+                                                        <li><a href="product-detail.html"><i class="fa fa-angle-right"></i> Product Detail </a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <h3 class="heading">Cart Pages</h3>
+                                                    <ul class="nav mega-vertical-nav">
+                                                        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>                                                   
+                                                        <li><a href="checkout.html"><i class="fa fa-truck"></i> Checkout</a></li>   
+                                                        <li><a href="order-history.html"><i class="fa fa-sliders"></i> Order history </a></li>
+                                                        <li><a href="compare.html"><i class="fa fa-random"></i> Compare </a></li>
+                                                        <li><a href="wishlist.html"><i class="fa fa-heart"></i> Wishlist </a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <img src="images/women/10.jpg" class="img-responsive" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li> <!--menu Features li end here-->
+                            <!--mega menu end--> 
+                            <!--mega menu-->
+                            <li class="dropdown yamm-fw">
+                                <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Women  <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="yamm-content">
+                                            <div class="row">
+
+                                                <div class="col-sm-3">
+                                                    <h3 class="heading">Sample title</h3>
+                                                    <ul class="nav mega-vertical-nav">        
+                                                        <li><a href="#">Nam ipsum est</a></li>
+                                                        <li><a href="#">Volutpat</a></li>
+                                                        <li><a href="#">In efficitur in</a></li>
+                                                        <li><a href="#">Accumsan eget</a></li>
+                                                        <li><a href="#">Curabitur</a></li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <h3 class="heading">Sample title </h3>
+                                                    <ul class="nav mega-vertical-nav">
+                                                        <li><a href="#">Nam ipsum est</a></li>
+                                                        <li><a href="#">Volutpat</a></li>
+                                                        <li><a href="#">In efficitur in</a></li>
+                                                        <li><a href="#">Accumsan eget</a></li>
+                                                        <li><a href="#">Curabitur</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <h3 class="heading">Sample title</h3>
+                                                    <ul class="nav mega-vertical-nav">
+                                                        <li><a href="#">Nam ipsum est</a></li>
+                                                        <li><a href="#">Volutpat</a></li>
+                                                        <li><a href="#">In efficitur in</a></li>
+                                                        <li><a href="#">Accumsan eget</a></li>
+                                                        <li><a href="#">Curabitur</a></li>                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <img src="images/women/8.jpg" class="img-responsive" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li> <!--menu Features li end here-->
+                            <!--mega menu end--> 
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true">Men <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Nam ipsum est</a></li>
+                                    <li><a href="#">Volutpat</a></li>
+                                    <li><a href="#">In efficitur in</a></li>
+                                    <li><a href="#">Accumsan eget</a></li>
+                                    <li><a href="#">Curabitur</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true">Blog <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    
+                                    <li><a href="blog-masonry.html">Masonry view</a></li>
+                                    <li><a href="blog-post.html">Single Post</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true"><i class="pe-7s-cart"></i> <span class="badge">5</span></a>
+                                <div class="dropdown-menu shopping-cart">
+
+                                    <div class="cart-items content-scroll">
+                                        <div class="cart-item clearfix">
+                                            <div class="img">
+                                                <img src="images/men/1.jpg" alt="" class="img-responsive">
+                                            </div><!--img-->
+                                            <div class="description">
+                                                <a href="#">Mauris et ligula quis</a><strong class="price">1 x $44.95</strong>
+                                            </div><!--Description-->
+                                            <div class="buttons">
+                                                <a href="#" class="fa fa-pencil"></a><a href="#" class="fa fa-trash-o"></a>
+                                            </div>
+                                        </div><!--cart item-->
+                                        <div class="cart-item clearfix">
+                                            <div class="img">
+                                                <img src="images/men/4.jpg" alt="" class="img-responsive">
+                                            </div><!--img-->
+                                            <div class="description">
+                                                <a href="#">Mauris et ligula quis</a><strong class="price">1 x $44.95</strong>
+                                            </div><!--Description-->
+                                            <div class="buttons">
+                                                <a href="#" class="fa fa-pencil"></a><a href="#" class="fa fa-trash-o"></a>
+                                            </div>
+                                        </div><!--cart item-->
+                                        <div class="cart-item clearfix">
+                                            <div class="img">
+                                                <img src="images/men/2.jpg" alt="" class="img-responsive">
+                                            </div><!--img-->
+                                            <div class="description">
+                                                <a href="#">Mauris et ligula quis</a><strong class="price">1 x $44.95</strong>
+                                            </div><!--Description-->
+                                            <div class="buttons">
+                                                <a href="#" class="fa fa-pencil"></a><a href="#" class="fa fa-trash-o"></a>
+                                            </div>
+                                        </div><!--cart item-->
+                                        <div class="cart-item clearfix">
+                                            <div class="img">
+                                                <img src="images/men/3.jpg" alt="" class="img-responsive">
+                                            </div><!--img-->
+                                            <div class="description">
+                                                <a href="#">Mauris et ligula quis</a><strong class="price">1 x $44.95</strong>
+                                            </div><!--Description-->
+                                            <div class="buttons">
+                                                <a href="#" class="fa fa-pencil"></a><a href="#" class="fa fa-trash-o"></a>
+                                            </div>
+                                        </div><!--cart item-->
+                                        <div class="cart-item clearfix">
+                                            <div class="img">
+                                                <img src="images/men/6.jpg" alt="" class="img-responsive">
+                                            </div><!--img-->
+                                            <div class="description">
+                                                <a href="#">Mauris et ligula quis</a><strong class="price">1 x $44.95</strong>
+                                            </div><!--Description-->
+                                            <div class="buttons">
+                                                <a href="#" class="fa fa-pencil"></a><a href="#" class="fa fa-trash-o"></a>
+                                            </div>
+                                        </div><!--cart item-->
+                                    </div><!--cart-items-->
+
+                                    <div class="cart-footer">
+                                        <a href="#" class="btn btn-light-dark"> View Cart</a>
+                                        <a href="#" class="btn btn-skin"> Checkout</a>
+                                    </div><!--footer of cart-->
+
+
+                                </div><!--cart dropdown end-->
+                            </li>
+
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!--/.container-fluid -->
+            </nav>
+            <!--main navigation end-->
+        </header>
+        <!--header end-->
+
+        <!--breadcrumb start-->
+        <div class="breadcrumb-wrapper">
+            <div class="container">
+                <h1>Products List</h1>
+            </div>
+        </div>
+        <!--end breadcrumb-->
+
+        <div class="space-60"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="product-filter-block list-inline clearfix">
+                        <li>Sort by:</li>
+                        <li class="active"><a href="#">Top Rated</a></li>
+                        <li><a href="#">Featured items</a></li>
+                        <li><a href="#">new arrivals</a></li>
+                    </ul><!--fliter list end-->
+
+                    <div class="product-list">
+                        <div class="row">
+                            <div class="col-md-4 margin-b-30">
+                                <div class="product-list-thumb">
+                                    <a href="#"> <img src="images/men/5.jpg" alt="Product image" class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="product-list-desc">
+                                    <h3 class="title"><a href="#">Product Name</a></h3>
+                                    <span class="price"><del>$299.00</del> $199.00</span>
+                                    <span class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-full"></i>
+                                        <a href="#">8 Reviews</a>
+                                    </span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="icon-list">
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Compare"><i class="fa fa-random"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to cart" class="btn btn-skin">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--products list-->
+                    <div class="product-list">
+                        <div class="row">
+                            <div class="col-md-4 margin-b-30">
+                                <div class="product-list-thumb">
+                                    <a href="#"> <img src="images/men/2.jpg" alt="Product image" class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="product-list-desc">
+                                    <h3 class="title"><a href="#">Product Name</a></h3>
+                                    <span class="price"><del>$299.00</del> $199.00</span>
+                                    <span class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-full"></i>
+                                        <a href="#">8 Reviews</a>
+                                    </span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="icon-list">
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Compare"><i class="fa fa-random"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to cart" class="btn btn-skin">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--products list-->
+                    <div class="product-list">
+                        <div class="row">
+                            <div class="col-md-4 margin-b-30">
+                                <div class="product-list-thumb">
+                                    <a href="#"> <img src="images/men/3.jpg" alt="Product image" class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="product-list-desc">
+                                    <h3 class="title"><a href="#">Product Name</a></h3>
+                                    <span class="price"><del>$299.00</del> $199.00</span>
+                                    <span class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-full"></i>
+                                        <a href="#">8 Reviews</a>
+                                    </span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="icon-list">
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Compare"><i class="fa fa-random"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to cart" class="btn btn-skin">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--products list-->
+                    <div class="product-list">
+                        <div class="row">
+                            <div class="col-md-4 margin-b-30">
+                                <div class="product-list-thumb">
+                                    <a href="#"> <img src="images/men/7.jpg" alt="Product image" class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="product-list-desc">
+                                    <h3 class="title"><a href="#">Product Name</a></h3>
+                                    <span class="price"><del>$299.00</del> $199.00</span>
+                                    <span class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-full"></i>
+                                        <a href="#">8 Reviews</a>
+                                    </span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="icon-list">
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Compare"><i class="fa fa-random"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to cart" class="btn btn-skin">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--products list-->
+                    <!--pagination-->
+                    <nav>
+                        <ul class="pagination pull-right clearfix">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--pagination end-->
+                </div>
+
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">T-shirts</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Handbags</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div><!--sidebar-widget end-->
+                    <div class="sidebar-widget">
+                        <h3>Bestseller </h3>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/men/5.jpg" alt="" width="70">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href='#'>men's backpack</a></h4>
+                                <span class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                </span>
+                                <span class="price">
+                                    <del>$99.00</del>
+                                    $49.00
+                                </span>
+
+                            </div>
+                        </div><!--media-->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/men/6.jpg" alt="" width="70">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href='#'>men's T-shirts</a></h4>
+                                <span class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                </span>
+                                <span class="price">
+                                    <del>$99.00</del>
+                                    $49.00
+                                </span>
+
+                            </div>
+                        </div><!--media-->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/women/5.jpg" alt="" width="70">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href='#'>Women's lowers</a></h4>
+                                <span class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                </span>
+                                <span class="price">
+                                    <del>$99.00</del>
+                                    $49.00
+                                </span>
+
+                            </div>
+                        </div><!--media-->
+                    </div><!--sidebar-widget end-->
+                    <div class="sidebar-widget clearfix">
+                        <h3>Color</h3>
+                        <a class="color-box gray" href='#'></a>
+                           <a class="color-box black" href='#'></a>
+                        <a class="color-box blue" href='#'></a>
+                        <a class="color-box red" href='#'></a>
+                        <a class="color-box yellow" href='#'></a>
+                    </div>
+                </div><!--sidebar col-->
+            </div>
+        </div>
+        <div class="space-60"></div>
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3>Subscribe to newsletter</h3>
+                        <p>Lorem ipsum get latest update of products sit amet.</p>
+                    </div>
+                    <div class="col-md-7">
+                        <form role="form" method="post" action="#" class="subscribe-form  assan-newsletter">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="email" placeholder="Enter email to subscribe">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <div>
+                                        <button class="newsletter-btn" name="submit" type="submit">Notify me</button>
+                                    </div>  
+                                </div>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer start-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 margin-b-30">
+                        <h3>About store</h3>
+                        <p>
+                            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus
+                        </p>
+                        <ul class="list-inline social-footer">
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" data-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" data-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" data-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" data-title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" data-title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" data-title="Rss feeds"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Latest Tweets </h3>
+                        <div class="tweet"></div>
+                    </div>
+                    <div class="col-md-3 margin-b-30">
+                        <h3>Product Tags </h3>
+                        <div class="tags clearfix">
+                            <a href="#">Fashion</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">bootstrap</a>
+                            <a href="#">Kids</a>
+                            <a href="#">Slippers</a>
+                            <a href="#">inner-wears</a>
+                            <a href="#">Women</a>
+                            <a href="#">Men</a>
+                            <a href="#">T-shirts</a>
+                            <a href="#">Jeans</a>
+                            <a href="#">Socks</a>
+                            <a href="#">Sports</a>
+                            <a href="#">Clothes</a>
+                            <a href="#">Watches</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 margin-b-30">
+                        <h3>Help Center</h3>
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">+01 1800 345-4509</h4>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">care@assan.com</h4>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">124, Lorem street, California, Usa</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <h3><a href="index.html"><img src="images/logo-white.png" alt=""></a></h3>
+                <ul class="list-inline">
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy & policy</a></li>
+                </ul>
+                <img src="images/payment.png" alt="" class="img-responsive payment">
+                <span class="copyright">&copy; Copyright 2015, Assan.</span>
+            </div>
+        </div>
+        <!--footer end-->
+        <!--js plugins-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>  
+        <script src="js/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>       
+        <script src="js/jquery.sticky.js" type="text/javascript"></script>
+        <script src="js/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="custom-scrollbar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+        <script src="bower_components/flexslider/jquery.flexslider-min.js"></script>
+        <script src="owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+        <script src="js/tweetie.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </body>
+</html>

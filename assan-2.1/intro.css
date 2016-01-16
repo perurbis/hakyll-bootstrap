@@ -1,0 +1,199 @@
+/*
+Assan intro css file
+version :2.1
+Author: Design_mylife
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,900,700);
+
+body{
+    color:#666;
+    font-family: 'Roboto', sans-serif;
+}
+.intro-header{
+    padding:150px 0;
+    padding-bottom: 0px;
+    background:url(demo-img/header.jpg) no-repeat;
+    border-bottom: 1px dashed #eee;
+    background-size: cover;
+}
+.intro-header h1{
+    font-weight: 300;
+    font-size: 50px;
+    text-transform: uppercase;
+    color:#fff;
+    margin-top: 0px;
+}
+.intro-header p{
+    font-weight: 300;
+    font-size: 20px;
+    color:#eee;
+    font-style: italic;
+}
+.intro-header img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.top-bar{
+    padding: 10px 0;
+    background-color:rgba(0,0,0,.95);
+    position: fixed;
+    width:100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+.top-bar a{
+    color:#fff;
+}
+.top-bar h4{
+    margin: 0px;
+    color:#fff;
+}
+.demo-wrap{
+    padding: 60px 0;
+}
+.demo-wrap h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.demo-wrap a{
+    display: block;
+    text-align: center;
+    border:1px solid #eee;
+    text-decoration: none;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    position: relative;
+}
+.new{
+    display: inline-block;
+    padding: 6px 12px;
+    background-color:  #f55e5e;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.demo-wrap a img{
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.demo-wrap a p{
+    margin: 0px;
+    padding: 3px 5px;
+    background-color: #eee;
+    font-size: 18px;
+    color:#333;
+}
+.scroll-buttons{
+    margin-top: 0px;
+}
+.scroll-buttons a{
+    margin: 10px;
+}
+.btn-red{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    padding: 12px 25px;
+    color:#fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #f55e5e;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+.btn-red:focus, .btn-red:hover{
+    color:#fff;
+    background-color: rgba(0,0,0,0.3);
+}
+.btn-white{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    padding: 12px 25px;
+    color:#333;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #fff;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+.btn-white:focus, .btn-white:hover{
+    color:#fff;
+    background-color: rgba(0,0,0,0.3);
+}
+ul{
+    padding: 20px 0;
+    margin-bottom: 0px;
+}
+ul li{
+    color:#fff;
+    line-height: 30px;
+}
+.cta{
+    padding: 40px 0;
+    background: #f55e5e;
+}
+.cta h1{
+    color:#fff;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.cta h1 i{
+    margin-right: 10px;
+}
+.cta a{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: rgba(255,255,255,0.9);
+    color:#000;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.cta a:hover{
+    background-color: rgba(255,255,255,1);
+}
+.testimonials{
+    padding: 40px 0;
+
+}
+.testimonials  h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.testimonials img{
+    display: block;
+    margin: 20px auto;
+}
+.testimonials p{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    color:#9a9a9a;
+    line-height: 30px;
+}
+.testimonials h5{
+    text-transform: uppercase;
+    color:  #333;
+}
+div#preloader { 
+    position: fixed; 
+    left: 0; 
+    top: 0;
+    z-index: 999;
+    width:100%; 
+    height:100%;
+    overflow: visible;
+    background: #fff url('demo-img/loader.GIF') no-repeat center center;
+}

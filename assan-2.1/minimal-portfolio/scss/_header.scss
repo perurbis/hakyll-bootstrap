@@ -1,0 +1,45 @@
+/***header style 1**/
+.hoe-right-header .right-navbar.socials{
+    li{
+        vertical-align:middle;
+        &:first-child{
+            margin-right: 20px;
+        }
+        a{
+          width:32px;
+          height:32px;
+          padding: 0px;
+          @include border-radius(50%);
+          @include box-shadow(0px 1px 1px 1px rgba(0,0,0,0.1));
+          margin-left: 5px;
+          margin-top: 10px;
+          text-align: center;
+          background-color: $skincolor;
+            display: block;
+            line-height:50px;
+            i{
+                font-size: 16px;
+                color:#fff;
+                display: block;
+                    line-height: 32px;
+            }
+        }
+    }
+}
+.hoe-left-header{
+    background-color: $skincolor;
+}
+#hoeapp-wrapper{
+    font-family: $p-font;
+}
+#hoeapp-wrapper[hoe-device-type="phone"] .hoe-left-header .hoe-sidebar-toggle a:after{
+    color:#fff;
+}
+#hoe-left-panel .panel-list > li > a span.menu-text{
+    text-transform: uppercase;
+}
+@media(min-width:1025px){
+    .hoe-sidebar-toggle{
+        display: none;
+    }
+}

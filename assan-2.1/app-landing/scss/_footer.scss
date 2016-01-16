@@ -1,0 +1,32 @@
+/**footer**/
+.footer{
+    padding: 60px 0;
+    background-color:#333;
+    h2{
+        font-family: $p-font;
+        color:#fff;
+    }
+    ul{
+        padding-top:20px;
+        padding-bottom:20px;
+        li{
+            padding:0px;
+            a{
+                display: block;
+                width: 60px;
+                margin: 5px 0;
+                height: 60px;
+                font-size: 25px;
+                line-height: 60px;
+                text-align: center;
+                @include border-radius(50%);
+               background-color: #222;
+                color:#aeaeae;
+                &:hover{
+                    color:#fff;
+                    background-color: #111;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+
+/* 
+    Created on : 12 Oct, 2015, 14:40:36 PM
+    Author     : RAKESH
+    File       : Assan Blog template for bloggers
+    version    : v1.0
+*/
+
+/**google font**/
+@import url(https://fonts.googleapis.com/css?family=Raleway:600,700,800,500);
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700);
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_base.scss";
+@import "_buttons.scss";
+@import "_socials.scss";
+@import "_header.scss";
+@import "_sidebar.scss";
+@import "_post.scss";
+@import "_footer.scss";
+
+
+
+/**Home latest news blog slider **/
+.slider-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.latest-news-slider{
+    .tp-caption.Newspaper-Title,.tp-caption.Newspaper-Button{
+    font-family: $title-font;  
+    font-weight: 400;
+}
+.tp-caption.Newspaper-Subtitle,.erinyen .tp-tab-desc{
+    font-family: $title-font;
+}
+}
+.erinyen .tp-tab-title, .tp-caption.Newspaper-Subtitle, .Newspaper-Subtitle{
+    color:$skincolor;
+}
+.instagram-feed{
+    padding-top: 60px;
+    background-color: #f5f5f5;
+}
+.footer{
+    padding-top: 30px;
+}
+.help-block{
+    ul{
+        padding: 0px;
+        list-style: none;
+        li{
+            color:red;
+        }
+    }
+}
+
+/**flex slider**/
+.flexslider{
+    border: 0px;
+    margin: 0px;
+    overflow:hidden;
+    .flex-direction-nav a{
+        color:#fff;
+        background-color: $skincolor;
+        text-align: center;
+        line-height: 40px;
+        &:before{
+            text-shadow: none;
+            color:#fff;
+            content: "\f105";
+            font-family: "FontAwesome";
+        }
+        &.flex-prev:before{
+            content: "\f104";
+        }
+    }
+}
+/*main flex slider*/
+.main-flex-slider{
+    max-width:1140px;
+    margin:0 auto;   
+    height: 480px;
+    margin-bottom:40px;
+    position:relative;
+    .slides{
+        li{
+            height: 480px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+.slider-inner{
+    width: 100%;
+    height: 100%;
+    display: table;
+    .slider-text{
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        .slider-text-inner{
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            @media(min-width:414px){
+                width:350px;
+                margin:0 auto;
+            }
+        }
+    }
+}
+
+/**about page**/
+.about-sec{
+    background-color: #f5f5f5;
+    padding: 30px 20px;
+    text-align: center;
+    h3{
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-bottom: 40px;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    p{
+        text-align: left;
+        
+    }
+    h5{
+        margin-bottom: 20px;
+    }
+    ul li {
+        padding: 0px;
+    }
+}
+.comment-form{
+    .form-control{
+        @include border-radius(0);
+        @include box-shadow(none);
+    }
+}
+@media(max-width:413px){
+    .post-header .post-title{
+        font-size: 15px;
+    }
+    .flexslider .flex-direction-nav a{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        font-size: 12px;
+        &:before{
+            font-size: 12px;
+        }
+    }
+    .slider-text-inner {
+        .post-header{
+            margin: 0px;
+        }
+        .btn-skin{
+        display: none;
+    }
+    }
+}

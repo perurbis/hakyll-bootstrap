@@ -1,0 +1,164 @@
+/***header style 1**/
+.header-v1 {
+    padding: 10px 0;
+    border: 0px;
+    background-color: transparent;
+
+    @include transition(all 0.4s);
+    .navbar-brand {
+        float: left;
+        height: 60px;
+        padding: 15px 15px;
+        font-size: 35px;
+        color:#fff;
+        text-transform: lowercase;
+        font-weight: 700;
+        line-height: 20px;
+        @include transition(all 0.4s);
+        position: relative;
+        font-family: $p-font;
+    }
+}
+.header-v1.sticky{
+    @include box-shadow(0px 2px 4px rgba(0,0,0,0.1));
+    background-color: #fff;
+    padding: 0px 0px;
+}
+.header-v1 .navbar-nav>li>a {
+    color: #eee;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-family: $tri-font;
+    &:hover{
+        color:$skincolor;
+    }
+
+}
+.header-v1.sticky .navbar-nav>li>a {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0px;
+    font-weight: 400;
+font-family: $tri-font;
+}
+.header-v1 .navbar-nav>.active>a, .header-v1 .navbar-nav>.active>a:focus, .header-v1 .navbar-nav>.active>a:hover {
+    color: $skincolor;
+    background-color:transparent;
+}
+.header-v1.sticky .navbar-nav>.active>a, .header-v1.sticky .navbar-nav>.active>a:focus, .header-v1.sticky .navbar-nav>.active>a:hover {
+    color: $skincolor;
+    background-color:transparent;
+}
+.header-v1 .navbar-brand{
+    color:#fff;
+}
+.header-v1.sticky .navbar-brand{
+    color:#333;
+}
+@media (min-width:992px){
+    .header-v1 .navbar-brand{
+        position: absolute;
+        left: 50%;
+        margin-left: -65px !important;
+        top:10px;
+    }
+    .header-v1.sticky .navbar-brand{
+        top:5px;
+    } 
+}
+@media (min-width: 768px){
+
+    .navbar-nav>li>a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navbar-right{
+        li.button-nav{
+            a{
+                background-color: $skincolor;
+                color:#fff;
+                padding: 8px 15px;
+                margin-top: 12px;
+                font-size: 12px;
+                font-weight: 400;
+                @include border-radius(20px);
+                &:hover, &:focus{
+                    background-color: #333;
+                    color:#fff !important;
+                }
+            }
+        }
+    }
+    .header-v1.sticky .navbar-right li.button-nav a{
+        color:#fff; 
+    }
+}
+
+
+
+/***header v2 using into newsletter form home section**/
+.header-v2{
+    margin-bottom: 0px;
+    border: 0px;
+    background-color:#fff;
+    .navbar-brand {
+        color: $skincolor;
+        font-size: 30px;
+        line-height: 25px;
+        font-weight: 700;
+        @include transition(all .25s ease-in-out);
+    }
+    .socials{
+        li{
+            a{
+               padding: 5px 5px;
+               margin-top: 10px;
+                font-size: 30px;
+                &:hover{
+                    color:$skincolor;
+                }
+            }
+        }
+    }
+}
+.header-v2 .navbar-nav>li>a {
+    color: #777;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: $tri-font;
+}
+.header-v2 .navbar-nav>.active>a, .header-v2 .navbar-nav>.active>a:focus, .header-v2 .navbar-nav>.active>a:hover {
+    color: $skincolor;
+    background-color: transparent;
+}
+.headroom {
+    @include transition(transform 200ms linear);
+}
+.headroom--pinned {
+    @include transform(translateY(0%));
+}
+.headroom--unpinned {
+    @include transform(translateY(-100%));
+}
+@media(max-width:767px){
+    .navbar-nav{
+        background-color: #333;
+        margin: 0px;
+    }
+    .header-v1 .navbar-toggle{
+        border: 0px;
+        margin-top: 15px;
+    }
+    .header-v1 .navbar-toggle:focus, .header-v1 .navbar-toggle:hover{
+        background-color: transparent;
+    }
+    .header-v1 .navbar-collapse, .header-v1 .navbar-form{
+        border: 0px;
+    }
+    .header-v2 .navbar-nav{
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,108 @@
+.footer{
+    padding: 60px 0;
+    background-color: #333;
+    h3{
+        color:#eee;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    p{
+        color:#bbb;
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
+    ul.social-footer{
+        li{
+            padding:0px 3px;
+            a{
+                display: block;
+                color:#fff;
+                font-size: 20px;
+                color:#aaa;
+                &:hover{
+                    color:#eee;
+                }
+            }
+        }
+    }
+    .tweet{
+        ul{
+            list-style: none;
+            padding: 0px;
+            li{
+                color:#bbb;
+                padding-bottom: 6px;
+                position:relative;
+                padding-left:25px;
+                &:before{
+                    content: "\f099";
+                    font-family: 'FontAwesome';
+                    color: #eeeeee;
+                    font-size: 18px;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+                a{
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .tags{
+        a{
+            display: block;
+            float: left;
+            padding: 3px 10px;
+            font-size: 13px;
+            border: 1px solid rgba(255,255,255,0.2);
+            margin: 3px;
+            text-transform: capitalize;
+            color:#bbb;
+            &:hover{
+                border-color: rgba(255,255,255,0.6);
+                color:#eee;
+            }
+        }
+    }
+    .media{
+        .media-heading{
+            font-family: $p-font;
+            font-weight: 400;
+            font-size: 16px;
+            color:#fff;
+            line-height: 26px;
+        }
+    }
+}
+
+.footer-bottom{
+    padding: 40px 0;
+    background-color: #222;
+    .list-inline{
+        padding:20px 0;
+        li{
+            padding:0px;
+            &:before{
+                content: "|";
+                margin: 0px 10px;
+            }
+            &:first-child:before{
+                content: ""; 
+            }
+            a{
+                color:#bbb;
+                &:hover{
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .payment{
+        display: block;
+        margin: 20px auto;
+        margin-top: 0px;
+    }
+}

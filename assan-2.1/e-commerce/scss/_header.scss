@@ -1,0 +1,300 @@
+/**header style**/
+.header{
+    background-color:#fff;
+    .top-bar{
+        background-color: #fff;
+        height: 30px;
+        span{
+            color:#999;
+            display: block;
+            line-height: 30px;
+            font-size: 12px;
+        }
+        ul{
+            margin:0;
+            padding:0;
+            li{
+                vertical-align: middle;
+                line-height: 29px;
+                font-size: 12px;
+                color:#999;
+                i{
+                    display: inline-block;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+                a{
+                    color:#333;
+                    display: block;
+                    img{
+                        margin-right: 5px;
+                    }
+                    &.offers{
+                        background: url(../images/offers.png) no-repeat;
+                        width: 73px;
+                        height: 19px;
+                        padding: 0;
+                        line-height: 20px;
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        color: #fff;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        /**top bar dropdown**/
+.lang-dropdown{
+    position: relative;
+    &:hover .lang-drop-menu{
+        display: block;
+    }
+}
+.lang-drop-menu{
+    position: absolute;
+    width: 140px;
+    top: 100%;
+    right: 0;
+    display: none;
+    text-align: left;
+    z-index: 99999;
+    left: auto;
+    background-color: #333;
+    &:after{
+            content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 5px 4px;
+    border-color: #2F2E2A transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -4px;
+    right: 30px;
+    }
+    a{
+        display: block;
+        color:#fff;
+        padding: 5px 10px;
+        &:hover{
+            background-color: $skincolor;
+        }
+        img{
+            margin-right: 5px;
+        }
+    }
+}
+    }
+
+
+}
+
+/**main navigation**/
+.navbar-default {
+    background-color: #fff;
+    border:0px;  
+    margin: 0px;
+    @include box-shadow (0 3px 0 0 #f5f5f5);
+    width:100%;
+    z-index:99;
+@include transition (all0.3s);
+    .navbar-brand{
+        font-family: $sec-font;
+        font-size: 30px;
+    }
+}
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size:13px;
+        font-family: $sec-font;
+}
+.navbar-default .navbar-brand>img{
+    margin-top: -5px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: $skincolor;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: $skincolor;
+    background-color: transparent;
+}
+@media(min-width:768px){
+    .navbar-default{
+        padding:15px 0;
+        .navbar-nav{
+            padding-left: 100px;
+        }
+    }
+}
+.navbar-right{
+
+    i{
+        font-size: 16px;
+    }
+    .badge{
+        background-color: $skincolor;
+        font-size: 9px;
+        padding: 0;
+        width:20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        @include border-radius (50%);
+    }
+}
+
+/**shopping cart dropdown menu**/
+.shopping-cart{
+    padding: 0px;
+    min-width: 300px !important;
+    border: 0px;
+    @include border-radius(0px);
+    .mCSB_inside > .mCSB_container {
+        margin-right: 6px;
+    }
+}
+.content-scroll{
+    height: 250px;
+    width:100%;
+}
+
+.cart-item{
+    padding-bottom:5px;
+    padding-top: 5px;
+    position:relative;
+    border-bottom:1px dashed #eee;
+    img{
+        float: left;
+        width:60px; 
+        margin-right: 10px;
+    }
+    .description{
+        overflow: hidden;
+        a{
+            color:#333;
+            font-size:13px;
+            &:hover{
+                color:$skincolor;
+            }
+        }
+        strong{
+            display: block;
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+    .buttons{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        a{
+            color:#999;
+            display: inline-block;
+            margin: 3px;
+            padding: 3px  6px;
+            border: 1px solid #ddd;
+            &:hover{
+                color:$skincolor;
+            }
+        }
+    }
+
+}
+.cart-footer{
+    padding: 15px;
+    background-color: #f0f0f0;
+    text-align: center;
+    a{
+        margin: 5px;
+    }
+}
+
+
+/**search field**/
+.search-bar{
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    display:none;
+    @include transition (all 0.5s);
+    form{
+        position: relative;
+        .search-close{
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+            top: 5px;
+            background: transparent;
+            color:#333;
+        }
+        .form-control{
+            @include box-shadow(none);
+            @include border-radius(0px);
+            background-color: transparent;
+            border: 1px solid rgba(0,0,0,0.1);
+           font-size: 13px;
+           color:#999;
+        }
+         .form-control::-webkit-input-placeholder {
+                color: #999;
+            }
+
+            .form-control:-moz-placeholder { /* Firefox 18- */
+                color: #999;  
+            }
+
+            .form-control::-moz-placeholder {  /* Firefox 19+ */
+                color: #999;  
+            }
+
+            .form-control:-ms-input-placeholder {  
+                color: #999;  
+            }
+    }
+}
+/**dropdown**/
+.dropdown-menu{
+    padding: 0px;
+    border: 2px solid #eee;
+    @include border-radius(0px);
+    @include box-shadow(none);
+    min-width: 190px;
+    >li>a{
+        padding: 7px 20px;
+        font-size: 13px;
+        text-transform: capitalize;
+        font-weight: 300;
+    }
+}
+/**mega menu**/
+.yamm-content{
+    background-color: #fff;
+    padding: 15px 25px;
+    h3{
+        font-size: 13px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color:#000;
+    }
+    .mega-vertical-nav{
+        li{
+            a{
+                color:#333;
+               font-weight: 300;
+                font-size: 13px;
+                padding: 5px 10px;
+                i{
+                    margin-right: 8px;
+                    color:#999;
+                }
+            }
+        }
+    }
+}
+
