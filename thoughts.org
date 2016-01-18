@@ -1,0 +1,119 @@
+* The problem
+Missed deadlines, arbitrary deadlines, lack of focus, lack of motivation,
+procrastination. Is what I'm working on really the most important thing? Slavish
+devotion to PM "religions". Agile is mostly common sense and doesn't address
+problems. Divide between "the business" and "technology". Scrum doesn't scale
+very well. Growing technical debt with no technical control over when to tackle
+it. Architecture is a dirty word. Delivery pressure. Focus on story points as a
+measure for progress (CARGO). Up front or long term planning specifically
+proscribed. Self organization, until it doesn't work. Don't micromanage == don't
+manage at all. Scrum actually is completely about micromanagement. Where's the
+leadership? In bigger organisations, agile used for tech leadership to slope
+shoulders. Any criticisms of the process are defensible with "you're not doing
+enough of the wrong thing" or no true scotsman". No variability - there's not
+enough intensity in the sprint, and they're back to back. There's no roadmap or
+masterplan (or is there is it's specifcally de-emshasised). Agile doesn't allow
+any creative or exploratory phase, because there's no business value (CARGO)
+delivered.
+
+Everything is a developers task and developers are assumed to be
+interchangable.
+
+No career progression - everyone's equal so what is there to aim
+for? No accountability, no one has any authority (even team appointed earned
+expertise) so no one is accountable. Fucking meetings!!!!! Project managers left
+hanging with noting much to do. There's no deconfliction or dependency
+management, becuase there's no one directing. Agile is supposed to be about
+empowering developers, but it does exactly the opposite by driving heirarchies
+underground and keeping issues from being address. It lets shitty people hide
+and proliferate.
+
+Worst case: two weeks of development on something you don't understand the
+impact of "demoed" in an excruciating meeting where users either don't show up,
+or don't give a shit!
+
+In the corps it's the responibility of the leader to present a good plan that
+will be judged by the subordinates.
+
+Tech wizards as NCOs.......
+
+*Transparency is the wrong way round! Transparency should be visible upwards: why are we doing this, what is our mission, and be shared downwards (visble at all levels below). Lower levels should not be transparent: they should expose just the results (encapsualtion and implementation hiding) the opposite is micromanagement.* https://michaelochurch.wordpress.com/2016/01/14/mood-disorders-cheating-at-monopoly-a-fundamental-truth-and-more-on-agile-scrum/ 
+
+** Quotes
+*** http://agileoverflow.com/t/scrum-seems-to-be-mostly-about-having-better-alibis/47
+Why on earth do we think, that a mixed group of people will always evolve into
+the absolute best, most efficient and technically sophisticated direction
+without requiring any sort of clear leadership, besides a glorified to-do list
+called a backlog?
+
+Isn't there a slight chance, that people who love code are ultimately better
+developers than people who love to talk?
+
+In fact, in larger agile organizations, the number one complaint I've heard from engineers was about the total lack of clear responsibilities.
+
+* Articles
+
+** Knowledge vs skills
+
+** SOPs
+
+** Reverse transparency
+
+** Structure vs Inspiration
+
+** Disipline equals freedom
+
+** Defense in depth
+
+** Pace of operations
+
+** Fractal and compositional project management
+* Links/notes
+
+**[[http://queue.acm.org/detail.cfm?id%3D2693160][A New Software Engineering]]
+Software is still a craft, this limits its scale.
+[[http://semat.org/][Software Engineering Method and Theory]] Agile practice cards
+ *** Methods made from practices
+*** Kernel
+**** Means of measuring
+**** Categorization of activities
+**** Set of competencies
+**** Predictive
+Is a proposed method well constructed? What are gaps/overlaps?
+*** Alphas
+**** 7 dimensions of progress
+Spider chart
+**** Checklist for each
+Checklist manefesto
+*** Practices
+A library of practices can be built up. == Unit SOPs?
+**** Identify areas of advancement
+**** Describe activities
+**** Describe competencies
+** [[http://queue.acm.org/detail.cfm?id%3D2685692][The Responsive Enterprise: Embracing the Hacker Way]]
+Enterprise as a mealy machine
+
+*** Netflix culture
+
+**** Context, not Control
+Contraints are good. Rules of engagement. Commanders intent
+
+
+**** Highly aligned, loosely coupled
+"Software is a complex endeavor. It is shaped by the human will. It is
+characterized by friction, uncertainty, fluidity, danger and disorder. While the
+nature of software is constant, it remains unpredictable, and is affected by a
+mix of physical, moral and mental factors. While software has the
+characteristics of both art and science, it is primarily shaped by human
+experience."
+
+The divisional organizational structure and operation of armies has
+been honed over many centuries to deal with such situations, and, hence, there
+is much to learn from the military. In particular, software development should
+follow the Philosophy of Command: "In order to support the fluid and chaotic
+nature of the battlefield, command must be decentralized. Subordinate leaders
+must use their own initiative to accomplish tasks which support their senior's
+intent."
+
+**** Freedom & responsibility
+Creativity balanced by integrity and accountability.
