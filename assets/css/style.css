@@ -11,9 +11,9 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   color: #424242;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
+  /* font-weight: 400; */
+  font-size: 20px;
+  line-height: 1.4;
   background-color: #fff;
   font-family: "Lato", sans-serif; }
 
@@ -165,8 +165,8 @@ h6 {
 /*parahraphs*/
 p {
   color: #555;
-  line-height: 24px;
-  margin: 0 0 20px; }
+  line-height: 1.4;
+  margin: 0 0 30px; }
 
 p.sub-text {
   font-style: normal;
@@ -176,7 +176,7 @@ p.sub-text {
   color: #555; }
 
 p.lead {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400; }
 
 pre:after, pre:before {

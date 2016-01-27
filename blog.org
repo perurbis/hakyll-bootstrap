@@ -26,4 +26,47 @@ Client disconnect from subscription channel UserProfileChannel
 {"metronome_subscription_channel":"UserProfileChannel","message":"Client disconnect from subscription channel UserProfileChannel"}
 --------------------------------------------------------------------------------
 metronome-server: Parse exception: not enough input
+* Copy
+Software should be so simple. There's nothing physical to make. There's no
+supply chain to manage. It's just people telling computers what to do... Except
+building software is not simple. Why not?
 
+We struggle to make sure we're working on the right things, at the same time as
+we talk about business and tech as if they're different entities. Our best
+people aren't engaged and working to their full potential. Is it too much to ask
+that we move fast, in the right direction, and *don't* break things?
+
+Often the first thing we reach for when the works get gummed up is *a process*.
+This might give the illusion of helping productivity in the short term. However,
+like imposing a religion, it doesn't work for long, and unexpressed resentment
+often lurks beneath the surface. Process is a tactical tool trying to fix an
+organisational problem: It's like teaching a bunch of people to march and
+thinking you have an army.
+
+Gathering great people and organising them to achieve a common goal is *hard*.
+It's also the responsibility of everyone in the team, at every level. This is
+not something that you can sprinkle *magic process dust* over and call done.
+However not doing it means being OK with mediocre performance and a stagnant,
+low energy working environment. Do it well and you'll have a a fired up mutually
+supportive team who you look forward to achieving great things with.
+
+I've experienced most of the bad side of software development. I've had process
+imposed from above. I've been on teams where the weak developers pull down the
+team by hiding behind bullshit, cargo cult processes. I've spent months
+wondering if what I'm working on is important becasue it wasn't clear what the
+business was doing. I've seen shitty codebases get shittier because refactoring
+couldn't be explained in terms of immediate business value.
+
+I got pretty sick of it, and I went looking for answers. As I started to dig
+into human performance and how teams work, I discovered that I'd already learned
+a lot of the lessons. I kept finding remedies to the software development
+malaise from a most unlikely source: The time I spent in the *Royal Marine
+Commandos*.
+
+The Royal Marines are...
+
+Not much to do with software development right? WRONG!
+
+Elite performance, learning, striving, struggling are all part of the human
+condition. Certain of these are central to performance in combat, and the Royal
+Marines are pretty good at that. 
