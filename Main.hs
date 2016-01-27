@@ -12,9 +12,12 @@
 module Main where
 
 import Hakyll
+
+import System.FilePath
 import Text.Pandoc
 import Text.Pandoc.Walk (walkM)
 import Data.Monoid (mappend)
+import qualified Data.List as L
 import qualified Data.Map as M
 import Data.Traversable (for)
 import Control.Monad.Trans.State.Strict (execState, modify)
@@ -79,6 +82,29 @@ indexCtx posts =
   `mappend` constField "title" "Home"
   `mappend` defaultContext
 
+--------------------------------------------------------------------------------
+cleanRoute :: Routes
+cleanRoute = customRoute createIndexRoute
+  where
+    createIndexRoute ident = takeDirectory p </> takeBaseName p </> "index.html"
+                            where p = toFilePath ident
+
+cleanIndexUrls :: Item String -> Compiler (Item String)
+cleanIndexUrls = return . fmap (withUrls cleanIndex)
+
+cleanIndexHtmls :: Item String -> Compiler (Item String)
+cleanIndexHtmls = return . fmap (replaceAll pattern replacement)
+    where
+      pattern = "/index.html"
+      replacement = const "/"
+
+cleanIndex :: String -> String
+cleanIndex url
+    | idx `L.isSuffixOf` url = take (length url - length idx) url
+    | otherwise            = url
+  where idx = "index.html"
+
+
 --------------------------------------------------------------------
 -- Rules
 --------------------------------------------------------------------
@@ -104,38 +130,42 @@ assets = do
 pages :: Rules ()
 pages = do
   match "pages/*" $ do
-    route $ setExtension "html"
+    route $ cleanRoute
     compile $ getResourceBody
       >>= loadAndApplyTemplate "templates/page.html"    postCtx
       >>= relativizeUrls
+      >>= cleanIndexUrls
 
 posts :: Rules ()
 posts = do
-  match "posts/*" $ do
-    route $ setExtension "html"
+  match "blog/*" $ do
+    route $ cleanRoute
     compile $ compiler
       >>= loadAndApplyTemplate "templates/post.html"    postCtx
       >>= relativizeUrls
 
 archive :: Rules ()
 archive = do
-  create ["archive.html"] $ do
-    route idRoute
+  create ["blog.html"] $ do
+    route cleanRoute
     compile $ do
-      posts <- recentFirst =<< loadAll "posts/*"
+      posts <- recentFirst =<< loadAll "blog/*"
       makeItem ""
         >>= loadAndApplyTemplate "templates/archive.html" (archiveCtx posts)
         >>= relativizeUrls
+        >>= cleanIndexUrls
 
 index :: Rules ()
 index = do
   match "index.html" $ do
     route idRoute
     compile $ do
-      posts <- recentFirst =<< loadAll "posts/*"
+      posts <- recentFirst =<< loadAll "blog/*"
       getResourceBody
         >>= applyAsTemplate (indexCtx posts)
         >>= relativizeUrls
+        >>= cleanIndexUrls
+ 
 
 templates :: Rules ()
 templates = match "templates/*" $ compile templateCompiler
@@ -151,7 +181,9 @@ pandocOptions :: WriterOptions
 pandocOptions = defaultHakyllWriterOptions{ writerHTMLMathMethod = MathJax "" }
 
 cfg :: Configuration
-cfg = defaultConfiguration
+cfg = defaultConfiguration {
+    deployCommand = "aws s3 sync _site s3://commandodev.com/ --region eu-west-1"
+  }
 
 main :: IO ()
 main = hakyllWith cfg $ do
