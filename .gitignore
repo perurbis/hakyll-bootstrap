@@ -10,3 +10,4 @@ cabal.sandbox.config
 .cabal-sandbox/
 Main
 nixpkgs
+scratch.html

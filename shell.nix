@@ -4,27 +4,20 @@ let
 
   inherit (nixpkgs) pkgs;
 
-  f = { mkDerivation, base, containers, hakyll, pandoc
-      , pandoc-types, stdenv, transformers
-      }:
-      mkDerivation {
-        pname = "hakyll-bootstrap";
-        version = "0.1.0.0";
-        src = ./.;
-        isLibrary = false;
-        isExecutable = true;
-        executableHaskellDepends = [
-          base containers hakyll pandoc pandoc-types transformers
-        ];
-        license = stdenv.lib.licenses.mit;
-      };
+  nixops = pkgs.callPackage ../nixops/release.nix {}; 
 
   haskellPackages = if compiler == "default"
                        then pkgs.haskellPackages
                        else pkgs.haskell.packages.${compiler};
 
-  drv = haskellPackages.callPackage f {};
+  site = haskellPackages.callPackage ./package.nix {};
+  with-nixops = pkgs.stdenv.mkDerivation {
+        name = "cdodev";
+        buildInputs = [site nixops.build.x86_64-linux];
+      };
 
 in
 
-  if pkgs.lib.inNixShell then drv.env else drv
+  if pkgs.lib.inNixShell
+    then site.env # // with-nixops
+    else site
