@@ -7,10 +7,22 @@
   <body>
     $partial("templates/nav.html")$
 
+    <div class="jumbotron">
     <div class="container">
-      <h2>$title$</h2>
-      $body$
+      <div class="row">
+        <div class="col-sm-12 center-heading">
+           <h1>$title$</h1>
+           <!-- <p>$title-img$</p> -->
+        </div>
+      </div>
     </div>
+    </div>
+    <div class="container">
+      <div class="row"
+        $body$
+      </div>
+    </div>
+
     $partial("templates/footer.html")$
     $partial("templates/after-load.html")$
 

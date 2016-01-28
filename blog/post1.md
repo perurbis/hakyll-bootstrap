@@ -1,5 +1,6 @@
 ---
 title: Example Blog Post
+title-img: None
 author: Stephen Diehl
 date: 2013-11-13
 mathjax: on
