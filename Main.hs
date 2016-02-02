@@ -121,20 +121,22 @@ assets = do
   mapM_ (static stripAssets) [ "assets/*", "assets/fonts/*", "assets/css/*", "assets/js/*"
                              , "assets/img/*", "assets/pe-icons/*"
                              ]
-  mapM_ (directory (static stripAssets)) [ "assets/rs-plugin/*", "assets/bootstrap/*"
-                                         , "assets/cubeportfolio/*", "assets/pe-icons/*"
-                                         ]
+  -- mapM_ (directory (static stripAssets)) [ "assets/rs-plugin/*", "assets/bootstrap/*"
+  --                                        , "assets/cubeportfolio/*", "assets/pe-icons/*"
+  --                                        ]
   where
     stripAssets = gsubRoute "assets/" (const "")
 
 pages :: Rules ()
 pages = do
   match "pages/*" $ do
-    route $ cleanRoute
+    route $ stripPages `composeRoutes` cleanRoute
     compile $ getResourceBody
       >>= loadAndApplyTemplate "templates/page.html"    postCtx
       >>= relativizeUrls
       >>= cleanIndexUrls
+  where
+    stripPages = gsubRoute "pages/" (const "")
 
 posts :: Rules ()
 posts = do
